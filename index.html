@@ -1,20 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>It's Mentor</title>
-<style>
-body{
-font-family:Arial;
-text-align:center;
-padding:80px;
-background:#f5f5f5;
-}
-h1{color:#0066ff;}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Easy Copy Paste is a browser extension designed to simplify copying and pasting text.">
+  <title>Easy Copy Paste | Simple Text Copying</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #172033;
+      background: #f5f8ff;
+      line-height: 1.6;
+    }
+    header {
+      padding: 20px 7%;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: white;
+      border-bottom: 1px solid #e5eaf4;
+    }
+    .logo {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: #245eea;
+      color: white;
+      font-size: 24px;
+    }
+    header strong { font-size: 20px; }
+    .hero {
+      text-align: center;
+      padding: 80px 20px 65px;
+      background: linear-gradient(135deg, #eaf0ff, #fff);
+    }
+    .tag {
+      color: #245eea;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-size: 13px;
+    }
+    h1 { font-size: clamp(34px, 6vw, 56px); line-height: 1.15; }
+    .hero p {
+      max-width: 620px;
+      margin: 20px auto;
+      color: #58647a;
+      font-size: 18px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      margin-top: 12px;
+      background: #245eea;
+      color: white;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section { padding: 45px 7%; }
+    h2 { text-align: center; font-size: 30px; }
+    .intro {
+      max-width: 700px;
+      text-align: center;
+      margin: 0 auto 28px;
+      color: #58647a;
+    }
+    .features, .plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+      max-width: 1050px;
+      margin: 28px auto;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e2e8f3;
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .card h3 { margin-top: 0; }
+    .price { font-size: 29px; font-weight: bold; color: #245eea; }
+    .muted { color: #657087; font-size: 14px; }
+    .notice {
+      max-width: 800px;
+      margin: auto;
+      padding: 18px;
+      background: #fff7df;
+      border-radius: 10px;
+      color: #654d0b;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #101b32;
+      color: white;
+    }
+    footer a { color: #dce6ff; margin: 0 8px; }
+  </style>
 </head>
 <body>
-<h1>It's Mentor</h1>
-<p>AI Automation, Web Development & Digital Solutions.</p>
-<p>Website Coming Soon.</p>
+  <header>
+    <div class="logo" aria-hidden="true">↔</div>
+    <strong>Easy Copy Paste</strong>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="tag">A SIMPLE BROWSER TOOL</div>
+      <h1>Copy and paste with less effort.</h1>
+      <p>Easy Copy Paste is a browser extension designed to make everyday text copying and pasting simpler through mouse interactions.</p>
+      <a class="button" href="#plans">View Plans</a>
+    </div>
+
+    <section id="about">
+      <h2>About the Extension</h2>
+      <p class="intro">A focused tool for people who regularly move text between websites and editable fields.</p>
+      <div class="features">
+        <div class="card">
+          <h3>Simple workflow</h3>
+          <p>Designed to help reduce repetitive copy-and-paste actions.</p>
+        </div>
+        <div class="card">
+          <h3>Browser-based</h3>
+          <p>Created as a browser extension for supported web pages.</p>
+        </div>
+        <div class="card">
+          <h3>Easy to use</h3>
+          <p>A straightforward experience focused on copying and pasting text.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans">
+      <h2>Subscription Plans</h2>
+      <p class="intro">Choose the plan that suits your needs.</p>
+      <div class="plans">
+        <div class="card">
+          <h3>Monthly</h3>
+          <div class="price">$14.90</div>
+          <p>1 month</p>
+        </div>
+        <div class="card">
+          <h3>3 Months</h3>
+          <div class="price">$29.90</div>
+          <p>3 months</p>
+        </div>
+        <div class="card">
+          <h3>6 Months</h3>
+          <div class="price">$49.90</div>
+          <p>6 months</p>
+        </div>
+        <div class="card">
+          <h3>Yearly</h3>
+          <div class="price">$90.00</div>
+          <p>12 months</p>
+        </div>
+      </div>
+      <p class="notice">Purchases are not available on this page yet. Official checkout links will be added after the store and subscription plans are configured.</p>
+    </section>
+
+    <section id="support">
+      <h2>Contact & Support</h2>
+      <p class="intro">For product questions, installation help, or support, contact the product owner using the support email provided at checkout.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Easy Copy Paste</p>
+    <p>A simple tool for everyday text workflows.</p>
+    <p>
+      <a href="#about">About</a>
+      <a href="#plans">Plans</a>
+      <a href="#support">Support</a>
+    </p>
+  </footer>
 </body>
 </html>
